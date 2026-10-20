@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 
-public class Blinking : MonoBehaviour
+namespace demo
 {
-    private SpriteRenderer spriteRenderer;
-
-    private void Start()
+    public class Blinking : MonoBehaviour
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+        private SpriteRenderer spriteRenderer;
 
-    private void Update()
-    {
-        spriteRenderer.enabled = !spriteRenderer.enabled;
+        private void Start()
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        private void Update()
+        {
+            spriteRenderer.enabled = !spriteRenderer.enabled;
+        }
     }
 }
